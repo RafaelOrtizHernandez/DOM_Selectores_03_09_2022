@@ -9,25 +9,16 @@
    
 </head>
 <body>
-    <div class="card">
-        <div class="imgBx">
-            <img src="imagenes/foto.jpg">
-        </div>
-        <div class="content">
-            <div class="details">
-                <h2>Rafael Ortiz<br><span>Ingeniero de Sistemas</span></h2>
-            <div class="data">
-                <h3>342<br><span>Posts</span></h3>
-                <h3>120k<br><span>Seguidores</span></h3>
-                <h3>285<br><span>Siguiendo</span></h3>
-            </div>
-            <div class="actionBtn">
-                <button>Seguir</button>
-                <button>Mensaje</button>
-            </div>
-        </div>
-    </div>
-</div>
+    <form id="miFormulario" action="llegada.js">
+        <input type="text" name="nombre" pattern="^[A-Za-z]+" title="Ingrese solo letras" required placeholder="Ingrese el nombre completo">
+        <input type="text" name="edad" pattern="^[0-9]+" required placeholder="Ingrese la edad">
+        <input type="text" name="direccion" required placeholder="Ingrese la dirección">
+        <textarea rows="4" name="mensaje" placeholder="Ingrese un mensaje"></textarea>
+        <input type="submit" value="Guardar">
+        
+    </form>
+
+    <script src="main.js"></script>
     
 
     
